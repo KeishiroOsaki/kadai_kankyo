@@ -25,7 +25,7 @@ window.onload = ->
     ctx.beginPath()
     ctx.fillStyle = col
     ctx.arc pt.x, pt.y, pt.size, 0, Math.PI * 2, true
-    
+        
     ctx.fill()
 
   update = ->
@@ -40,7 +40,7 @@ window.onload = ->
 
     for i in [0..nPoint]
       d = dpoints[i]
-      points[i].update(d.dx*acc, d.dy*acc, 0.00002#d.dsize*acc)
+      points[i].update(d.dx*acc, d.dy*acc, 0.01#d.dsize*acc)
       )
 
     acc -= 0.4

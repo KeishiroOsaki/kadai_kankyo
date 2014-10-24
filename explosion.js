@@ -61,7 +61,7 @@
       }
       for (i = _j = 0; 0 <= nPoint ? _j <= nPoint : _j >= nPoint; i = 0 <= nPoint ? ++_j : --_j) {
         d = dpoints[i];
-        points[i].update(d.dx * acc, d.dy * acc, 0.00002);
+        points[i].update(d.dx * acc, d.dy * acc, 0.01);
       }
       acc -= 0.4;
       return window.requestAnimationFrame(update);
